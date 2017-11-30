@@ -1,0 +1,471 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+/* CSS Document */
+
+
+
+
+body {
+    background-color: rgb(195,255,211) !important;
+}
+
+
+p {
+    font-size: 50px;
+	color:#c82e29 !important;
+}
+
+h1 {
+	font-size: 100px !important;
+	color: #ffc000 !important;
+}
+
+IMG.displayed1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  	margin-top: 10%;
+}
+
+IMG.displayed2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+}
+
+
+IMG.displayed3 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+
+}
+
+IMG.displayed4 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+IMG.displayed5 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+  	margin-bottom: 0px;
+  	padding: 0.25rem;
+  	background-color: #fff;
+  	border: 1px solid #ddd;
+  	border-radius: 0.25rem;
+  	transition: all 0.2s ease-in-out;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+	
+  font-weight: 300;
+}
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #53e3a6;
+  font-weight: 800;
+}
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #53e3a6;
+  font-weight: 800;
+}
+body :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #53e3a6;
+  opacity: 1;
+  font-weight: 800;
+}
+body ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #53e3a6;
+  opacity: 1;
+  font-weight: 800;
+}
+body :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #53e3a6;
+  font-weight: 800;
+}
+
+
+.container {
+  max-width: 510px;
+  margin: 0 auto;
+  padding: 5px 0;
+  height: 50%;
+  text-align:center;
+  margin-top: 20%;
+  margin-bottom: 10%;
+}
+
+.container2 {
+  max-width: 510px;
+  margin: 0 auto;
+  padding: 5px 0;
+  height: 50%;
+  text-align:center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container3 {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 5px 0;
+  height: 50%;
+  text-align:center;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  margin-left: auto;
+}
+
+.bild1 {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 7%;
+	max-width: 100px;
+	width: 100% !important;
+	
+}
+
+.rahmen {
+    
+	width: 300px;
+	height: 300px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: #FFFFFF;
+	padding: 30px;
+	border-radius: 20px;
+	float: left;
+}
+
+.spacer {
+    height: calc(100% - 200px);
+    width: 0px;
+    float: right;
+}
+
+
+.left {
+  max-width: 25%;
+  margin: 0 auto;
+  padding: 5px 0;
+  height: 50%;
+  text-align:center;
+  margin-top: 10px;
+  
+  margin-left: 10%;
+
+}
+
+form {
+  padding: 5px 5px;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.form2 {
+	 -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: rgba(255, 255, 255)!important;
+  width: 200px;
+  border-radius: 10px;
+  padding:-5px 10px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: 5px;
+  
+  
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight:100;
+ 
+}
+form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 3px;
+  background-color: rgba(255, 255, 255);
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 140%;
+  
+  
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight:20%;
+  
+}
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form2 input:hover {
+
+	background-color: transparent !important;
+}
+form input:focus {
+  background-color: white;
+  width: 250px;
+  color: #53e3a6;
+}
+
+.form2 input:focus {
+  background-color: white;
+  color: #53e3a6;
+  width:inherit !important;
+}
+.container .form input {
+}
+form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: rgb(195,255,211);
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 40%;
+  cursor:pointer;
+  font-size: 150%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 900;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+.button2 {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: rgb(195,255,211);
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 20%;
+  cursor:pointer;
+  font-size: 90%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+	
+}
+
+.button3 {
+	 -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: rgb(255,255,255);
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 5px;
+  width: 100px;
+  cursor:pointer;
+  font-size: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+.button4 {
+	 -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: rgb(255,255,255);
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 5px;
+  width: 100px;
+  cursor:pointer;
+  font-size: 20px !important;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 600;
+  
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+	
+}
+
+
+
+form button:hover {
+  background-color: #f5f7f9;
+}
+
+.button3:hover {
+  background-color: #f5f7f9;
+}
+
+#nextButton {
+	
+	position:relative; 
+	margin-top: 10px;
+	margin-bottom: 100px;
+}
+
+#tu {
+	margin-right: 30px;
+}
+
+
+.bounce {
+    position:relative;
+    left:50%;
+    bottom:0;
+    margin-top:10%;
+    margin-left:-2%;
+    width:40%;
+    -webkit-animation:bounce 1s infinite;
+    -moz-animation:bounce 1s infinite;
+    -o-animation:bounce 1s infinite;
+    animation:bounce 1s infinite;
+    
+  }
+
+#navbar {
+  max-width: 98%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.navbar-custom {
+    background-color: transparent !important;
+    color:#ffffff;
+    border-radius:10px;
+	border-color: transparent !important;
+}
+
+ol li.list-group-item { 
+    list-style: decimal inside;
+    display: list-item;
+}
+
+.inputfile + label {
+   	width: 0.1px;
+	height: 0.1px;
+	opacity: 0 !important;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+/*Quelle: https://css-tricks.com/snippets/css/custom-file-input-styling-webkitblink/*/
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input:before:hover:-webkit-file-upload-button {
+  visibility: hidden;
+  background-color: #D2C8C8;
+	
+}
+
+
+.custom-file-input::before {
+  content: 'SELECT YOUR FRIDGE';
+  display: inline-block;
+  background: white;
+  border-radius: 3px;
+  padding: 10px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 400;
+  font-size: 10pt;
+  color: #53e3a6;
+  margin: auto;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+input[type='file'] {
+  color: transparent;
+}
+
+.list-group-item {
+background-color: transparent !important;
+border-color: transparent !important;
+}
+
+ol {
+  font-family: 'Heebo', sans-serif;
+  font-size: 50px;
+}
+  
+  @-webkit-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-moz-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-o-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+
+

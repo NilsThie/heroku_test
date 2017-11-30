@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="public/css/startseite.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/omr3vqe.css">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:800|Passion+One" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+     <!-- NavBar -->
+<div id="navbar">
+  <nav class="navbar navbar-inverse navbar-custom r-">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/stream"><img src="../public/images/logo.svg" width="60px"></a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <a href="/upload" class="btn btn-outline-light navbar-btn">Upload</a>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+            <a href="/stats">Top10</a>
+            </li>
+          </ul>
+
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="/viewAccount"><span class="glyphicon glyphicon-user"></span> Profil</a></li>
+        </ul>
+
+         <ul class="nav .btn-info navbar-nav navbar-right">
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+
+
+
+
+
+
+      </div>
+    </nav>
+    </div>
+  </div>
+      </div>
+                <div class="container2">
+                	<a href="/deleteAccount">Delete Account</a>
+                </div>
+      <div class="top10">
+           <div class="container2">
+                         <%if(fridges.length == 0){%>
+                           No fridges uploaded
+                         <%} else{%>
+            <li name="ranking" class="list-group-item"><img src="<%=fridges[0].filepath %>" height="128">           Rating: <%=fridges[0].rating%></li>
+            <li name="ranking" class="list-group-item"><img src="<%=fridges[1].filepath %>" height="128">           Rating: <%=fridges[1].rating%></li>
+            <li name="ranking" class="list-group-item"><img src="<%=fridges[2].filepath %>" height="128">           Rating: <%=fridges[2].rating%></li>
+            <li name="ranking" class="list-group-item"><img src="<%=fridges[3].filepath %>" height="128">           Rating: <%=fridges[3].rating%></li>
+        		<li name="ranking" class="list-group-item"><img src="<%=fridges[4].filepath %>" height="128">           Rating: <%=fridges[4].rating%></li>
+        		<li name="ranking" class="list-group-item"><img src="<%=fridges[5].filepath %>" height="128">           Rating: <%=fridges[5].rating%></li>
+        		<li name="ranking" class="list-group-item"><img src="<%=fridges[6].filepath %>" height="128">           Rating: <%=fridges[6].rating%></li>
+        		<li name="ranking" class="list-group-item"><img src="<%=fridges[7].filepath %>" height="128">           Rating: <%=fridges[7].rating%></li>
+        		<li name="ranking" class="list-group-item"><img src="<%=fridges[8].filepath %>" height="128">           Rating: <%=fridges[8].rating%></li>
+        		<li name="ranking" class="list-group-item"><img src="<%=fridges[9].filepath %>" height="128">           Rating: <%=fridges[9].rating%></li>
+           <%}%></div>
+      </div>
+
+      </body>
+      </html>

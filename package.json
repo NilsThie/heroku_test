@@ -1,0 +1,32 @@
+{
+  "name": "ratemyfridge",
+  "version": "1.0.0",
+  "description": "APRG Projekt1 von Mike, Nils, Lars und Robin",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "del": "^3.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "lokijs": "^1.5.1",
+    "mongodb": "^2.2.33",
+    "multer": "^1.3.0",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmv3/APRG1_PR_MNLR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmv3/APRG1_PR_MNLR/issues"
+  },
+  "homepage": "https://github.com/lmv3/APRG1_PR_MNLR#readme"
+}

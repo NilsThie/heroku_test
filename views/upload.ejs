@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Upload</title>
+<link href="../public/css/startseite.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.typekit.net/omr3vqe.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="../public/dropzone/dropzone.js"></script>
+<link rel="stylesheet" href="../public/dropzone/dropzone.css">
+
+</head>
+
+<body>
+
+     <!-- NavBar -->
+     <div id="navbar">
+        <nav class="navbar navbar-inverse navbar-custom r-">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="/stream"><img src="../public/images/logo.svg" width="60px"></a>
+              </div>
+              
+              <ul class="nav navbar-nav">
+                  <a href="/upload" class="btn btn-outline-light navbar-btn">Upload</a>           
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-left">
+                  <li>
+                  <a href="/stats">Top10</a>
+                  </li>
+                </ul>
+                
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="/viewAccount"><span class="glyphicon glyphicon-user"></span> Profil</a></li>
+              </ul>
+              
+               <ul class="nav .btn-info navbar-nav navbar-right">
+                <li><a href="/logout">Logout</a></li>
+              </ul>
+              
+            </div>
+          </nav>
+          </div>
+
+
+
+    <div class="container2">
+        <img src="../public/images/Upload.svg" width="40%">
+        <form action="/commitUpload" name="/commitUpload" enctype="multipart/form-data"  method="post" class="form2">
+		      <!--<input id="input-b2" name="input-b2" type="file" class="inputfile" data-show-preview="false">-->
+    		    <input type ="file" id="uploadFile" name="uploadFile" class="custom-file-input"><br>
+          	<button class="button4" type="submit">Upload</button>
+		    </form>
+        </div>
+
+
+
+
+
+
+</body>
+</html>

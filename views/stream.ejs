@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Stream</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="public/rating/stars.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+</head>
+<body>
+   <!-- NavBar --> 
+      <!-- NavBar -->
+      <div id="navbar">
+          <nav class="navbar navbar-inverse navbar-custom r-">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="/stream"><img src="../public/images/logo.svg" width="60px"></a>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <a href="/upload" class="btn btn-outline-light navbar-btn">Upload</a>           
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                    <a href="/stats">Top10</a>
+                    </li>
+                  </ul>
+                  
+                <ul class="nav navbar-nav navbar-left">
+                  <li><a href="/viewAccount"><span class="glyphicon glyphicon-user"></span> Profil</a></li>
+                </ul>
+                
+                 <ul class="nav .btn-info navbar-nav navbar-right">
+                  <li><a href="/logout">Logout</a></li>
+                </ul>
+                
+              </div>
+            </nav>
+            </div>
+
+
+   <div class="container">
+  <h1>Frdiges<h1>
+      <ul>
+        <!-- Loop through all fridges entrys -->
+        <% for(var i=0; i < fridges.length; i++){ %>
+          <li> <%=fridges[i].description %>
+            <div class="container">
+            <!-- Display Rating -->
+            <div class='stars'  id='star_element'>
+  <form action="<%="/rate/" + fridges[i]._id %>"  name="stars" method="post">
+    <input class="star star-5" id="star-5" type="radio" value="5" name="star"/>
+    <label class="star star-5" for="star-5"></label>
+    <input class="star star-4" id="star-4" type="radio" value="4" name="star"/>
+    <label class="star star-4" for="star-4"></label>
+    <input class="star star-3" id="star-3" type="radio" value="3" name="star"/>
+    <label class="star star-3" for="star-3"></label>
+    <input class="star star-2" id="star-2" type="radio"  value="2" name="star"/>
+    <label class="star star-2" for="star-2"></label>
+    <input class="star star-1" id="star-1" type="radio" value="1" name="star<"/>
+    <label class="star star-1" for="star-1"></label>
+      <button type="submit" id="berechnen">Submit</button>
+
+  </form>
+</div>
+            <img src=<%=fridges[i].filepath %> alt="<%=fridges[i].description%>" height="128" width="128">
+            User: <%=fridges[i].username %>
+            Rating: <%=fridges[i].rating %>
+
+            </div>
+
+            </li>
+            <% } %>
+          </ul>
+        </div>
+      </body>
+      </html>
+=======
+
+
+</body>
+</html>

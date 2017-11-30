@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rate It!</title>
+<link href="../public/css/startseite.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="public/rating/stars.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.typekit.net/omr3vqe.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="/public/lightbox/js/lightbox-plus-jquery.js"></script>
+<link rel="stylesheet"href="public/lightbox/css/lightbox.css">
+<style>
+  form { display: inline; }
+</style>
+</head>
+
+
+<body>
+
+
+     <!-- NavBar -->
+     <div id="navbar">
+        <nav class="navbar navbar-inverse navbar-custom r-">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="/stream"><img src="../public/images/logo.svg" width="60px"></a>
+              </div>
+              
+              <ul class="nav navbar-nav">
+                  <a href="/upload" class="btn btn-outline-light navbar-btn">Upload</a>           
+              </ul>
+              
+              <ul class="nav navbar-nav navbar-left">
+                  <li>
+                  <a href="/stats">Top10</a>
+                  </li>
+                </ul>
+                
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="/viewAccount"><span class="glyphicon glyphicon-user"></span> Profil</a></li>
+              </ul>
+              
+               <ul class="nav .btn-info navbar-nav navbar-right">
+                <li><a href="/logout">Logout</a></li>
+              </ul>
+              
+            </div>
+          </nav>
+          </div>
+
+
+
+  <!-- <h1 class="tk-balboa-plus-primary" width="40px">Fridges</h1> -->
+  <img src="../public/images/rate_me.svg" class="displayed4" width="300">
+  <a href="<%=fridges[dbIndex].filepath %>" data-lightbox="image-1">
+  <img name="ratePic" class="displayed5"  src="<%=fridges[dbIndex].filepath %>" height="350px">
+  </a>
+
+  <div class="container2">
+  <div class="voting">
+  <form action="<%="/upvote/" + fridges[dbIndex]._id %>" method="post">
+  <button type="submit" id="thumbsbutton" name="thumbsUp" value="1"><img src="../public/images/daumen_hoch.svg" width="40px"></button>
+  </form>
+  <form   <form action="<%="/downvote/" + fridges[dbIndex]._id %>" method="post"  >
+  <button type="submit" id="thumbsbutton"  name="thumbsDown" value="-1"><img src="../public/images/daumen_runter.svg" width="40px"></button>
+</form>
+</div>
+</div>
+
+
+
+</body>
+</html>
